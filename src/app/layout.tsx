@@ -2,6 +2,7 @@ import "./globals.css";
 import { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Navbar } from "@/components/Navbar";
 
 // Configure the primary font
 const inter = Inter({ subsets: ["latin"] });
@@ -83,6 +84,7 @@ export default function RootLayout({
       >
         {/* ThemeProvider from shadcn/ui */}
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+          <Navbar />
           {children}
         </ThemeProvider>
       </body>
