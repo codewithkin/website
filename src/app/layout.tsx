@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
 // Configure the primary font
 const inter = Inter({ subsets: ["latin"] });
@@ -86,6 +87,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <Navbar />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
