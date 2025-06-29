@@ -4,6 +4,7 @@ import { Services } from '@/components/home/Services'
 import { RecentServicesCarousel } from '@/components/home/RecentWorkCarousel'
 import { TeamSection } from '@/components/home/Team'
 import { ProjectStats } from '@/components/home/project-stats'
+import { Testimonials } from '@/components/home/Testimonials'
 
 function Home() {
     return (
@@ -13,6 +14,7 @@ function Home() {
             <Services />
             <TeamSection />
             <ProjectStats />
+            <Testimonials />
         </section>
     )
 }
