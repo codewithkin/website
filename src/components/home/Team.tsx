@@ -68,7 +68,7 @@ export function TeamSection() {
                     {team.map((member, index) => (
                         <HoverCard key={index}>
                             <HoverCardTrigger asChild>
-                                <div className="cursor-pointer rounded-lg overflow-hidden shadow-lg p-4">
+                                <div className="cursor-pointer rounded-lg overflow-hidden shadow-lg p-4 flex flex-col justify-center items-center">
                                     <img
                                         src={member.image}
                                         alt={member.name}
